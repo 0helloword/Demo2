@@ -13,14 +13,14 @@ public class NewApplyAction {
 	}
 	
 	// 提交申请
-	public void NewApply()
+	public void NewApply(String productSeries)
 			throws InterruptedException {
 		Thread.sleep(2000);
 		new Select(NewApplyPage.storeId(driver)).selectByIndex(1);//门店
 		Thread.sleep(2000);
 		new Select(NewApplyPage.careerType(driver)).selectByIndex(1);//职业
 		Thread.sleep(2000);
-		new Select(NewApplyPage.productSeries(driver)).selectByIndex(1);// 系列
+		new Select(NewApplyPage.productSeries(driver)).selectByVisibleText(productSeries);;// 系列
 		Thread.sleep(1000);
 		new Select(NewApplyPage.productType(driver)).selectByIndex(1);//货物类别
 		Thread.sleep(1000);

@@ -36,13 +36,15 @@ public class SaProcess {
 		login.Login(username, password);
 	}
 	
+	@Parameters({"productSeries"})
 	@Test(priority = 2)
-	public void NewApply()throws InterruptedException {
+	public void NewApply(String productSeries)throws InterruptedException {
 		// 新建贷款申请
 		homepage=new HomePageAction(webdriver);
-		homepage.AddApp();
+		homepage.AddApp();//新增pos贷
+		//homepage.AddNjApp();//新增农机贷
 		newapply=new NewApplyAction(webdriver);
-		newapply.NewApply();
+		newapply.NewApply(productSeries);
 	}
 	
 	@Parameters({"customername","cardId", "mobile","repayAcc" })

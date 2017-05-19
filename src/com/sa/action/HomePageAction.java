@@ -16,13 +16,18 @@ public class HomePageAction {
 		this.driver = driver;
 	}
 
-	// 新增工单
+	// 新增工单-pos贷
 	public void AddApp() throws InterruptedException {
 		Thread.sleep(1000);
 		HomePage.AddApp(driver).click();
 
 	}
+	// 新增工单-农机贷
+	public void AddNjApp() throws InterruptedException {
+		//Thread.sleep(1000);
+		HomePage.AddNjApp(driver).click();
 
+	}
 	
 
 	// 返回driver

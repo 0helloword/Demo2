@@ -15,7 +15,10 @@ public class HomePage {
         return element;
     }
     
-  
+     public static WebElement AddNjApp(WebDriver driver){
+         element = driver.findElement(By.linkText("新增工单(农机贷)"));//新增工单
+         return element;
+     }
     
    
   
