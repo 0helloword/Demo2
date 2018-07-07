@@ -9,14 +9,14 @@
 		<parameter name="picpath" value="E:\\test1.jpg" />
 		<!-- 以下为需要修改的参数 -->
 		<parameter name="productSeries" value="手机" />
-		<parameter name="customername" value="罗熊德" />
-		<parameter name="cardId" value="130204199901019910" />
-		<parameter name="mobile" value="18951121276" />
-		<parameter name="repayAcc" value="4221459154118452" />
-		<parameter name="email" value="567192921@qq.com" />
-		<parameter name="qq" value="5678123932" />
-		<parameter name="contractphone" value="18919511252" />
-		<parameter name="uncontractphone" value="15995792112" />
+		<parameter name="customername" value="李路" />
+		<parameter name="cardId" value="430221198909077843" />
+		<parameter name="mobile" value="15044162654" />
+		<parameter name="repayAcc" value="6217000940014460720" />
+		<parameter name="email" value="567136221@qq.com" />
+		<parameter name="qq" value="5678654232" />
+		<parameter name="contractphone" value="18919864252" />
+		<parameter name="uncontractphone" value="15995652211" />
 		<classes >
 		<class name="com.sa.testng.SaProcess">
 		<methods>
