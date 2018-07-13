@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite1]">
+  <parameter name="cardId" value="430221198909077843"/>
+  <parameter name="picpath" value="E:\\test1.jpg"/>
+  <parameter name="uncontractphone" value="15995652211"/>
+  <parameter name="password" value="cyj123"/>
+  <parameter name="username" value="998866"/>
+  <parameter name="email" value="567136221@qq.com"/>
+  <parameter name="repayAcc" value="6217000940014460720"/>
+  <parameter name="url_sa" value="http://123.57.56.45:10080/cnsa/initLogin"/>
+  <parameter name="productSeries" value="手机"/>
+  <parameter name="contractphone" value="18919864252"/>
+  <parameter name="qq" value="5678654232"/>
+  <parameter name="customername" value="李路"/>
+  <parameter name="mobile" value="15044162654"/>
+  <test name="sa(failed)">
+    <parameter name="cardId" value="430221198909077843"/>
+    <parameter name="picpath" value="E:\\test1.jpg"/>
+    <parameter name="username" value="998866"/>
+    <parameter name="email" value="567136221@qq.com"/>
+    <parameter name="repayAcc" value="6217000940014460720"/>
+    <parameter name="url_sa" value="http://123.57.56.45:10080/cnsa/initLogin"/>
+    <parameter name="productSeries" value="手机"/>
+    <parameter name="uncontractphone" value="15995652211"/>
+    <parameter name="password" value="cyj123"/>
+    <parameter name="contractphone" value="18919864252"/>
+    <parameter name="qq" value="5678654232"/>
+    <parameter name="mobile" value="15044162654"/>
+    <parameter name="customername" value="李路"/>
+    <classes>
+      <class name="com.sa.testng.SaProcess">
+        <methods>
+          <include name="BasicInfo" invocation-numbers="0"/>
+          <include name="LoanInfo" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="Upload" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.sa.testng.SaProcess -->
+    </classes>
+  </test> <!-- sa(failed) -->
+</suite> <!-- Failed suite [suite1] -->

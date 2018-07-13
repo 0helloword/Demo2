@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-suite1">
+              <span class="suite-name border-failed">suite1</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-suite1">
+                    <span>F:\test\workspace\Demo2\satestng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-suite1">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-suite1">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-suite1">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-suite1">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-suite1">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-suite1">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">5 methods, 4 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-suite1" class="hide-methods failed suite-suite1"> (hide)</a> <!-- hide-methods failed suite-suite1 -->
+                      <a href="#" panel-name="suite-suite1" class="show-methods failed suite-suite1"> (show)</a> <!-- show-methods failed suite-suite1 -->
+                    </span>
+                    <div class="method-list-content failed suite-suite1">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite1" title="com.sa.testng.SaProcess" hash-for-method="BasicInfo(567136221@qq.com, 5678654232, 18919864252, 15995652211, cyj123)">BasicInfo(567136221@qq.com, 5678654232, 18919864252, 15995652211, cyj123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite1" title="com.sa.testng.SaProcess" hash-for-method="LoanInfo(李路, 430221198909077843, 15044162654, 6217000940014460720)">LoanInfo(李路, 430221198909077843, 15044162654, 6217000940014460720)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite1" title="com.sa.testng.SaProcess" hash-for-method="Login(998866, cyj123)">Login(998866, cyj123)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite1" title="com.sa.testng.SaProcess" hash-for-method="Upload(E:\\test1.jpg)">Upload(E:\\test1.jpg)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-suite1 -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-suite1" class="hide-methods passed suite-suite1"> (hide)</a> <!-- hide-methods passed suite-suite1 -->
+                      <a href="#" panel-name="suite-suite1" class="show-methods passed suite-suite1"> (show)</a> <!-- show-methods passed suite-suite1 -->
+                    </span>
+                    <div class="method-list-content passed suite-suite1">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-suite1" title="com.sa.testng.SaProcess" hash-for-method="NewApply(手机)">NewApply(手机)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-suite1 -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-suite1" class="panel suite1">
+          <div class="suite-suite1-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sa.testng.SaProcess</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BasicInfo(567136221@qq.com, 5678654232, 18919864252, 15995652211, cyj123)">
+                  </a> <!-- BasicInfo(567136221@qq.com, 5678654232, 18919864252, 15995652211, cyj123) -->
+                  <span class="method-name">BasicInfo</span>
+                  <span class="parameters">(567136221@qq.com, 5678654232, 18919864252, 15995652211, cyj123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;issuingOrgan&quot;}
+Command duration or timeout: 10.12 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;IT-caoyangjun&apos;, ip: &apos;192.168.150.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: ed45bd8f-360f-4ac2-8955-d45ef1f53ed1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:425)
+	at org.openqa.selenium.By$ByName.findElement(By.java:299)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.sa.page.BasicInfoPage.issuingOrgan(BasicInfoPage.java:11)
+	at com.sa.action.BasicInfoAction.basicinfo(BasicInfoAction.java:17)
+	at com.sa.testng.SaProcess.BasicInfo(SaProcess.java:72)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;name&quot;,&quot;selector&quot;:&quot;issuingOrgan&quot;}
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;IT-caoyangjun&apos;, ip: &apos;192.168.150.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///D:/Users/test/AppData/Local/Temp/anonymous1106878404068303990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:9470)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///D:/Users/test/AppData/Local/Temp/anonymous1106878404068303990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:407)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoanInfo(李路, 430221198909077843, 15044162654, 6217000940014460720)">
+                  </a> <!-- LoanInfo(李路, 430221198909077843, 15044162654, 6217000940014460720) -->
+                  <span class="method-name">LoanInfo</span>
+                  <span class="parameters">(李路, 430221198909077843, 15044162654, 6217000940014460720)</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: Modal dialog present: 430221198909077843为已有客户不可再次办理
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;IT-caoyangjun&apos;, ip: &apos;192.168.150.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: ed45bd8f-360f-4ac2-8955-d45ef1f53ed1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.createUnhandledAlertException(ErrorHandler.java:185)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:152)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:393)
+	at org.openqa.selenium.By$ById.findElement(By.java:214)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.sa.page.LoanInfoPage.repayType(LoanInfoPage.java:26)
+	at com.sa.action.LoanInfoAction.loaninfo(LoanInfoAction.java:25)
+	at com.sa.testng.SaProcess.LoanInfo(SaProcess.java:55)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(998866, cyj123)">
+                  </a> <!-- Login(998866, cyj123) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(998866, cyj123)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span.name&quot;}
+Command duration or timeout: 12.59 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;IT-caoyangjun&apos;, ip: &apos;192.168.150.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: ed45bd8f-360f-4ac2-8955-d45ef1f53ed1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:441)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:426)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.sa.page.LoginPage.loginname(LoginPage.java:25)
+	at com.sa.action.LoginAction.Login(LoginAction.java:28)
+	at com.sa.testng.SaProcess.Login(SaProcess.java:36)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;span.name&quot;}
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;IT-caoyangjun&apos;, ip: &apos;192.168.150.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///D:/Users/test/AppData/Local/Temp/anonymous1106878404068303990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:9470)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///D:/Users/test/AppData/Local/Temp/anonymous1106878404068303990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:407)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Upload(E:\\test1.jpg)">
+                  </a> <!-- Upload(E:\\test1.jpg) -->
+                  <span class="method-name">Upload</span>
+                  <span class="parameters">(E:\\test1.jpg)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[3]/div[2]/div/form/div/div[2]/div/div/div/div/p/strong&quot;}
+Command duration or timeout: 10.06 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;IT-caoyangjun&apos;, ip: &apos;192.168.150.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Session ID: ed45bd8f-360f-4ac2-8955-d45ef1f53ed1
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=XP, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, browserConnectionEnabled=true, webStorageEnabled=true, nativeEvents=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=24.0}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:449)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:357)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at com.sa.page.UploadPage.appid(UploadPage.java:11)
+	at com.sa.action.UploadAction.upload(UploadAction.java:17)
+	at com.sa.testng.SaProcess.Upload(SaProcess.java:63)
+Caused by: org.openqa.selenium.remote.ErrorHandler$UnknownServerException: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/div[3]/div[2]/div/form/div/div[2]/div/div/div/div/p/strong&quot;}
+Build info: version: &apos;2.42.2&apos;, revision: &apos;6a6995d&apos;, time: &apos;2014-06-03 17:42:03&apos;
+System info: host: &apos;IT-caoyangjun&apos;, ip: &apos;192.168.150.116&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;x86&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_79&apos;
+Driver info: driver.version: unknown
+	at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///D:/Users/test/AppData/Local/Temp/anonymous1106878404068303990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:9470)
+	at &lt;anonymous class&gt;.fxdriver.Timer.prototype.setTimeout/&lt;.notify(file:///D:/Users/test/AppData/Local/Temp/anonymous1106878404068303990webdriver-profile/extensions/fxdriver@googlecode.com/components/driver_component.js:407)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite1-class-failed -->
+          <div class="suite-suite1-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sa.testng.SaProcess</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NewApply(手机)">
+                  </a> <!-- NewApply(手机) -->
+                  <span class="method-name">NewApply</span>
+                  <span class="parameters">(手机)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-suite1-class-passed -->
+        </div> <!-- panel suite1 -->
+        <div panel-name="test-xml-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">F:\test\workspace\Demo2\satestng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;suite1&quot;&gt;
+  &lt;test name=&quot;sa&quot;&gt;
+    &lt;parameter name=&quot;cardId&quot; value=&quot;430221198909077843&quot;/&gt;
+    &lt;parameter name=&quot;picpath&quot; value=&quot;E:\\test1.jpg&quot;/&gt;
+    &lt;parameter name=&quot;username&quot; value=&quot;998866&quot;/&gt;
+    &lt;parameter name=&quot;email&quot; value=&quot;567136221@qq.com&quot;/&gt;
+    &lt;parameter name=&quot;repayAcc&quot; value=&quot;6217000940014460720&quot;/&gt;
+    &lt;parameter name=&quot;url_sa&quot; value=&quot;http://123.57.56.45:10080/cnsa/initLogin&quot;/&gt;
+    &lt;parameter name=&quot;productSeries&quot; value=&quot;手机&quot;/&gt;
+    &lt;parameter name=&quot;uncontractphone&quot; value=&quot;15995652211&quot;/&gt;
+    &lt;parameter name=&quot;password&quot; value=&quot;cyj123&quot;/&gt;
+    &lt;parameter name=&quot;contractphone&quot; value=&quot;18919864252&quot;/&gt;
+    &lt;parameter name=&quot;qq&quot; value=&quot;5678654232&quot;/&gt;
+    &lt;parameter name=&quot;mobile&quot; value=&quot;15044162654&quot;/&gt;
+    &lt;parameter name=&quot;customername&quot; value=&quot;李路&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sa.testng.SaProcess&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;Login&quot;/&gt;
+          &lt;include name=&quot;NewApply&quot;/&gt;
+          &lt;include name=&quot;LoanInfo&quot;/&gt;
+          &lt;include name=&quot;Upload&quot;/&gt;
+          &lt;include name=&quot;BasicInfo&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.sa.testng.SaProcess --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- sa --&gt;
+&lt;/suite&gt; &lt;!-- suite1 --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">sa (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_suite1');
+function tableData_suite1() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(5);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'NewApply')
+data.setCell(0, 2, 'com.sa.testng.SaProcess')
+data.setCell(0, 3, 22455);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Login')
+data.setCell(1, 2, 'com.sa.testng.SaProcess')
+data.setCell(1, 3, 13094);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'BasicInfo')
+data.setCell(2, 2, 'com.sa.testng.SaProcess')
+data.setCell(2, 3, 12143);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Upload')
+data.setCell(3, 2, 'com.sa.testng.SaProcess')
+data.setCell(3, 3, 12065);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'LoanInfo')
+data.setCell(4, 2, 'com.sa.testng.SaProcess')
+data.setCell(4, 3, 6301);
+window.suiteTableData['suite1']= { tableData: data, tableDiv: 'times-div-suite1'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-suite1">
+              </div> <!-- times-div-suite1 -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for suite1</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-suite1" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sa.testng.SaProcess</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">beforeMethod(http://123.57.56.45:10080/cnsa/initLogin)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login(998866, cyj123)</span>
+                <span class="method-start">7082 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">NewApply(手机)</span>
+                <span class="method-start">20204 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">LoanInfo(李路, 430221198909077843, 15044162654, 6217000940014460720)</span>
+                <span class="method-start">42661 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Upload(E:\\test1.jpg)</span>
+                <span class="method-start">48965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">BasicInfo(567136221@qq.com, 5678654232, 18919864252, 15995652211, cyj123)</span>
+                <span class="method-start">61034 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
